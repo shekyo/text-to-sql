@@ -25,7 +25,7 @@ End-to-End Solution: From data preparation to interaction with the chatbot.
 
 Clone the Repository:
 
-git clone https://github.com//Text-to-SQL-Chatbot.git
+git clone https://github.com/shekyo/Text-to-SQL-Chatbot.git
 cd Text-to-SQL-Chatbot
 Set Up MySQL:
 
