@@ -1,44 +1,95 @@
-# text-to-sql
-Welcome to the Text to SQL Chatbot project! This project aims to bridge the gap between non-technical team members and database interactions, allowing users to query databases using natural language instead of SQL.
+# Text to SQL Chatbot
 
+Welcome to the **Text to SQL Chatbot** project!  
+This system bridges the gap between non-technical users and databases by allowing natural language questions to be automatically converted into SQL queries.
 
-📖 Project Overview :
-In many companies, team members may need access to data stored in SQL databases but lack the technical skills to write SQL queries. This chatbot allows users to ask questions in natural language, converts those questions into SQL queries, and retrieves results from the database.
+## 📚 Table of Contents
+- 📖 Project Overview  
+- 🔧 Features  
+- 🛠️ Installation  
+- 🚀 Usage  
+- 🗼 Architecture  
+- 📊 Evaluation  
+- 📝 Future Work  
+- 📄 License  
 
-This project is applicable in various domains, including healthcare, retail, and finance.
+## 📖 Project Overview
 
-🔧 Features
+In many organizations, accessing SQL database information requires technical knowledge.  
+This chatbot enables team members to retrieve data by simply asking questions in **plain English**, without writing SQL.
 
-Natural Language Processing: Converts user queries into SQL statements.
-Database Interaction: Connects to MySQL databases to fetch results.
-User-Friendly Output: Provides results back to the user in natural language.
-End-to-End Solution: From data preparation to interaction with the chatbot.
-🛠️ Installation To get started with the Text to SQL Chatbot, follow these steps:
+The system:  
+- Understands user queries  
+- Converts them into SQL  
+- Executes the query on a MySQL database  
+- Returns results in a clean, readable format  
 
-Clone the Repository:
+This approach is applicable across industries like healthcare, retail, finance, and more.
 
+## 🔧 Features
+
+- Natural Language Processing → Converts user queries into SQL  
+- Database Interaction → Connects to a MySQL database to fetch data  
+- User-Friendly Output → Returns structured, readable responses  
+- End-to-End Flow → From data ingestion to query execution  
+- LLM-Powered → Uses a Large Language Model to generate accurate SQL  
+
+## 🛠️ Installation
+
+### 1. Clone the Repository
+```bash
 git clone https://github.com/shekyo/Text-to-SQL-Chatbot.git
 cd Text-to-SQL-Chatbot
-Set Up MySQL:
+```
 
-Create a MySQL database and tables as specified in the project.
-Load your data from Excel sheets into the MySQL database.
-Configure API Keys: Ensure you have the necessary API keys for the LLM you will be using (e.g., Google Gemini).
+### 2. Set Up MySQL
+- Create a MySQL database  
+- Create tables as specified  
+- Load Excel sheet data into MySQL  
 
+### 3. Configure API Keys
+Make sure you add your LLM API keys (Google Gemini, OpenAI, etc.).
 
-Data Source: Excel sheets containing raw data.
-📊 Evaluation The performance of the chatbot can be evaluated using various metrics, including:
+## 🚀 Usage
 
-Accuracy: How accurately the LLM generates the correct SQL queries.
-Response Time: The time taken to return results after a query is made.
-User Feedback: Collecting feedback from users on the clarity and usefulness of responses.
-📝 Future Work There are several ways to enhance this project:
+1. Run the backend or notebook.  
+2. Ask questions in plain English:
+   - "List all customers from California"
+   - "Show total revenue by department"
+3. The chatbot:
+   - Converts → SQL  
+   - Executes → MySQL  
+   - Returns → Clean natural language response  
 
-Multiple LLMs: Experiment with other large language models for better accuracy.
-User Interface: Develop a web interface using Flask or Streamlit for easier interaction.
-Deployment: Host the application on cloud platforms to make it accessible to a wider audience.
+## 🗼 Architecture
 
+```
+User Query 
+   ↓
+LLM Chain (NL → SQL) 
+   ↓
+MySQL Database 
+   ↓
+Output Parser 
+   ↓
+Final Answer
+```
 
-Database: MySQL database where the data is stored and queried.
-LLM Chain: Uses a large language model to convert natural language questions into SQL queries.
-Output Parser: Processes the SQL query output and formats it for user display.
+- Database: MySQL  
+- LLM Chain: Converts natural language → SQL  
+- Output Parser: Formats SQL results  
+- Data Source: Excel → MySQL  
+
+## 📊 Evaluation
+
+- **Accuracy**: Correct SQL generated  
+- **Response Time**: Speed of full pipeline  
+- **User Feedback**: Quality and clarity of answers  
+
+## 📝 Future Work
+
+- Support multiple LLMs  
+- Add Flask/Streamlit UI  
+- Deploy to cloud  
+- Improve SQL accuracy using schema-aware models  
+
