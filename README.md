@@ -1,17 +1,9 @@
 # text-to-sql
 Welcome to the Text to SQL Chatbot project! This project aims to bridge the gap between non-technical team members and database interactions, allowing users to query databases using natural language instead of SQL.
 
-📚 Table of Contents
 
-📖 Project Overview
-🔧 Features
-🛠️ Installation
-🚀 Usage
-🗼 Architecture
-📊 Evaluation
-📝 Future Work
-📄 License
-📖 Project Overview In many companies, team members may need access to data stored in SQL databases but lack the technical skills to write SQL queries. This chatbot allows users to ask questions in natural language, converts those questions into SQL queries, and retrieves results from the database.
+📖 Project Overview :
+In many companies, team members may need access to data stored in SQL databases but lack the technical skills to write SQL queries. This chatbot allows users to ask questions in natural language, converts those questions into SQL queries, and retrieves results from the database.
 
 This project is applicable in various domains, including healthcare, retail, and finance.
 
